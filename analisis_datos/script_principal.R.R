@@ -18,7 +18,7 @@ set.seed(155)
 # CABA. Para ello de la página oficial data.buenosaires.gob.ar, descargamos los datos.
 
 library(readr)
-Ciclovias <- read_csv("Downloads/ciclovias.csv")
+Ciclovias <- read_csv("data/ciclovias.csv")
 
 
 # Primero, vamos a visualizar qué comunas tienen la mayor cantidad de cicloviás.
@@ -74,7 +74,7 @@ ggplot(promedio_por_comuna, aes(x = comuna, y = promedio)) +
 # trabajan o pasan su tiempo los usuarios de las bicicletas. Para ellos bajamos los datos de la misa web.
 
 library(readxl)
-bicicleteros <- read_excel("Downloads/bicicleteros.xlsx")
+bicicleteros <- read_excel("data/bicicleteros.xlsx")
 bicicleteros <- bicicleteros %>% 
   mutate(comuna =parse_number(comuna)) # Modifico la forma de los datos
 
