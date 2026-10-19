@@ -17,7 +17,7 @@ set.seed(155)
 
 # Primero, abrimos la base de datos
 library(readr)
-datos <- read_csv("datos/gapminder.csv")
+datos <- read_csv("datos/gapminder (1).csv")
 
 # Aislamos las observaciones de Argentina
 library(tidyverse)
